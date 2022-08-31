@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="member">
+	<insert id="insert" parameterType="com.livelikesloth.step03.member.dto.MemberDto">
+		insert into member
+		(num, name, addr)
+		values(member_seq.nextval, #{name},#{addr})
+	</insert>
+	<update id="update" parameterType="com.livelikesloth.step03.member.dto.MemberDto">
+		update member
+		set name=#{name}, addr=#{addr}
+		where num=#{num}
+	</update>
+	<delete id="delete" parameterType="int">
+		delete from member
+		where num=#{num}
+	</delete>
+	<!--  resultType="select된 row 하나를 담을 데이터 type -->
+	<select id="getData" parameterType="int" resultType="com.livelikesloth.step03.member.dto.MemberDto">
+		select num, name, addr
+		from member
+		where num=#{num}
+	</select>
+	<select id="getList" resultType="com.livelikesloth.step03.member.dto.MemberDto">
+		select num, name, addr
+		from member
+		order by num asc
+	</select>
+	
+</mapper>
