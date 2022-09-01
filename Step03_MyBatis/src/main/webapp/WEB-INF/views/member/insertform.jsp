@@ -13,7 +13,7 @@
 		<form action="${pageContext.request.contextPath}/member/insert.do" method="post">
 			<div>
 				<label for="name">이름</label>
-				<input type="text" name="name" id="addr" />
+				<input type="text" name="name" id="name" />
 			</div>
 			<div>
 				<label for="addr">주소</label>

@@ -2,9 +2,11 @@
 <!DOCTYPE configuration
   PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-config.dtd">
-  <configuration>
-  <!--  사용할 Mapper xml 문서 등록하기 -->
-  	<mappers>
-  		<mapper resource="com/livelikesloth/step03/mybatis/MemberMapper.xml"/>
-  	</mappers>
-  </configuration>
+<configuration>
+<!--  사용할 Mapper xml 문서 등록하기 -->
+	<mappers>
+		<mapper resource="com/livelikesloth/step03/mybatis/MemberMapper.xml"/>
+		<mapper resource="com/livelikesloth/step03/mybatis/TodoMapper.xml"/>
+	</mappers>
+
+</configuration>

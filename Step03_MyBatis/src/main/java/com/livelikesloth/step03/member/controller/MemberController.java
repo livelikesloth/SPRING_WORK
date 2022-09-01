@@ -63,8 +63,6 @@ public class MemberController {
    
    @RequestMapping("/member/list")
    public String list(HttpServletRequest request) {
-      
-      
       List<MemberDto> list=dao.getList();
       
       request.setAttribute("list", list);

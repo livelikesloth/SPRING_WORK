@@ -89,6 +89,15 @@
 		<beans:property name="suffix" value=".jsp" />
 	</beans:bean>
 	
+	
+	<!-- 
+		com.livelikesloth.step03 패키지와 그 하위에 있는 모든 패키지를 scan해서 
+		스프링 bean 컨테이너에 관리할 객체를 생성해서 관리한다.
+		
+		- scan도중 @Controller, @Service, @Repository, @Component 등의 
+		어노테이션이 붙어 있는 클래스가 있다면 해당 클래스로 각채를 생성해서
+		스프링 bean 컨테이너에서 관리를 한다.
+	 -->
 	<context:component-scan base-package="com.livelikesloth.step03" />
 	
 	
