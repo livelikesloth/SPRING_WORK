@@ -1,16 +1,12 @@
 package com.livelikesloth.step03.member.controller;
 
-import java.util.List;
 
-
-import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.livelikesloth.step03.member.dao.MemberDao;
 import com.livelikesloth.step03.member.dto.MemberDto;
 import com.livelikesloth.step03.member.service.MemberService;
 /*

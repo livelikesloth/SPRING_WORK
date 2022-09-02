@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import com.livelikesloth.step03.member.dao.MemberDao;
 import com.livelikesloth.step03.member.dto.MemberDto;
 
-@Controller
+//@Controller
 public class MemberController {
    
    // spring bean container 로 부터 MemberDao 인터페이스 type 의 참조값을 DI 받는다. 
