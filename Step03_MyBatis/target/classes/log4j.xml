@@ -11,7 +11,7 @@
 	</appender>
 	
 	<!-- Application Loggers -->
-	<logger name="com.livelikesloth.step03">
+	<logger name="com.gura.step03">
 		<level value="info" />
 	</logger>
 	
