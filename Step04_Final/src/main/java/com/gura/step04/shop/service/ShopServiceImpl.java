@@ -71,7 +71,7 @@ public class ShopServiceImpl implements ShopService{
 		dto2.setId(id); //누가
 		dto2.setCode(num); //어떤 상품을 
 		//클라이언트가 입력한 배송 주소라고 가정 
-		String addr="제주시 삼원빌딩";
+		String addr="미국";
 		dto2.setAddr(addr);//어디로 배송할지
 		
 		//배송 불가 지역이 있다고 가정하자
