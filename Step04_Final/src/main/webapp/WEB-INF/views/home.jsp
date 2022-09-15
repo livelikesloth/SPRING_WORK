@@ -22,7 +22,7 @@
 			</p>
 		</c:otherwise>
 	</c:choose>
-	
+
 	<h1>인덱스 페이지 입니다.</h1>
 	<ul>
 		<li><a href="${pageContext.request.contextPath}/file/list.do">자료실 목록 보기</a></li>

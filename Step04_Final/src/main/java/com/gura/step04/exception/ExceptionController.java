@@ -1,17 +1,25 @@
 package com.gura.step04.exception;
 
 import org.springframework.dao.DataAccessException;
+
+
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.servlet.ModelAndView;
-
+/*
+ *	@ControllerAdvice 어노테이션이 붙어있으면 component scan을 통해서 스프링이 관리ㅏ는 bean이 된다.
+ *
+ *	spring framework가 client의 요청을 처리하는 도중에 특정 type의 Exception 이 발생했을 때
+ *
+ *	응답하기 위한 컨트롤러라고 생각하면 된다.
+ */
 @ControllerAdvice
 public class ExceptionController {
 	//spring framework 가 동작하는 중에 NotDeleteException type 의 
 	//예외가 발생하면 호출되는 메소드 
 	@ExceptionHandler(NotDeleteException.class)
 	public ModelAndView notDelete(NotDeleteException nde) { //메소드의 인자로 예외 객체가 전달된다.
-
+		
 		//ModelAndView 객체를 생성해서 
 		ModelAndView mView=new ModelAndView();
 		//exception 이라는 키값으로 예외 객체를 담고 

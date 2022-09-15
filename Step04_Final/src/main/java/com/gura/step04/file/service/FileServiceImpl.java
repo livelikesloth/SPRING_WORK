@@ -176,7 +176,6 @@ public class FileServiceImpl implements FileService{
 		//DB 에서 파일 정보 삭제
 		dao.delete(num);
 	}
-	
 }
 
 

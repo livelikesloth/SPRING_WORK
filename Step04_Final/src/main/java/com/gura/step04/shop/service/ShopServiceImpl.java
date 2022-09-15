@@ -12,6 +12,7 @@ import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.gura.step04.exception.NotDeleteException;
+import com.gura.step04.exception.NotDeliveryException;
 import com.gura.step04.shop.dao.OrderDao;
 import com.gura.step04.shop.dao.ShopDao;
 import com.gura.step04.shop.dto.OrderDto;
@@ -76,7 +77,7 @@ public class ShopServiceImpl implements ShopService{
 		
 		//배송 불가 지역이 있다고 가정하자
 		if(addr.contains("제주")) {
-			throw new NotDeleteException("제주는 배송 불가 지역 입니다.");
+			throw new NotDeliveryException("제주는 배송 불가 지역 입니다.");
 		}
 		
 		orderDao.addOrder(dto2);
